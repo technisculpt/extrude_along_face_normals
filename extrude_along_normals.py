@@ -34,8 +34,6 @@ def extrude_along_face_normals(blender_obj, distance):
                                                                         "snap_normal":(0, 0, 0),
                                                                         "release_confirm":False,
                                                                         "use_accurate":False})
-    bpy.ops.mesh.select_all(action='SELECT')
-    bpy.ops.mesh.normals_make_consistent(inside=False)
     bpy.ops.object.editmode_toggle()
     bpy.context.active_object.select_set(False)
 
