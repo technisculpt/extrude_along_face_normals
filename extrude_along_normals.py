@@ -1,5 +1,5 @@
 # extrude object along face normals by a set distance
-# mark lagana 2021
+# mark lagana 2022
 
 import bpy
 
