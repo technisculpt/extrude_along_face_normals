@@ -4,13 +4,11 @@
 import bpy
 
 def main():
-
     b_obj = bpy.data.objects['Suzanne'] # change Suzanne to your part name
     distance = 5 # distance to extrude, make negative to go opposite direction
     extrude_along_face_normals(b_obj, distance)
 
 def extrude_along_face_normals(blender_obj, distance):
-
     bpy.ops.object.select_all(action="DESELECT")
     bpy.context.view_layer.objects.active = blender_obj
     bpy.context.active_object.select_set(True)
@@ -39,5 +37,4 @@ def extrude_along_face_normals(blender_obj, distance):
 
 
 if __name__ == '__main__':
-
     main()
